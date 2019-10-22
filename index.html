@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+   <meta charset="utf-8">
+   <style>
+
+      body{ background: black; }
+      .rain{ width: 0px;
+      height: 0px;
+      border-right: 60px solid black;
+      border-top: 60px solid transparent;
+      border-left: 60px solid transparent;
+      border-bottom: 60px solid transparent;
+      border-top-left-radius: 60px;
+      border-top-right-radius: 60px;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+         position: absolute;
+         animation: rr 0.1s forwards ease-in;}
+
+      .rain img{width: 100px; height: 100px; position: absolute;}
+      .rain p{position: absolute;  font-family: 'Modak', cursive; background: white; }
+
+      .box {width: 100%; height: 200px; background: red; position: absolute;}
+
+
+
+
+
+
+
+      @keyframes rr{
+         from{bottom: 1000px;}
+         to{bottom: 60px;}
+
+      }
+   </style>
+</head>
+<body>
+   
+   <div class="rain" id="rrr"><p>Help!</p><img src="man_w.png"></div>
+   <script>
+    for(var i=0; i<30; i++){
+      var tt = rrr.cloneNode(true);
+      tt.id = i;
+      tt.style.animationDelay = i+0.1+"s";
+      tt.style.left = i*45 + "px";
+      tt.style.animationDuration = "0.01s";
+      tt.style.oppacity = a(1);
+      tt.style.background = rgbmake();
+      document.body.appendChild(tt);
+   }
+   function a(num){
+      var cc = Math.random()*num;
+      return cc
+
+   }
+
+   function rgbmake(){
+
+   var a = Math.random()*255;
+   var b = 255;
+   var c = Math.random()*255;
+   var d ="rgb("+a+","+b+","+c+")";
+
+   return d;
+}
+
+   </script>
+</body>
+</html>
