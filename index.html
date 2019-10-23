@@ -8,18 +8,18 @@
       body{ background: black; }
       .rain{ width: 0px;
       height: 0px;
-      border-right: 25px solid black;
-      border-top: 25px solid transparent;
-      border-left: 25px solid transparent;
-      border-bottom: 25px solid transparent;
-      border-top-left-radius: 25px;
-      border-top-right-radius: 25px;
-      border-bottom-left-radius: 25px;
-      border-bottom-right-radius: 25px;
+      border-right: 50px solid black;
+      border-top: 50px solid transparent;
+      border-left: 50px solid transparent;
+      border-bottom: 50px solid transparent;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
          position: absolute;
-         animation: rr 0.1s forwards ease-in; margin-left: 60px;}
+         animation: rr 0.1s forwards ease-in; margin-left: 10vh;}
 
-      .rain img{width: 30px; height: 30px; position: absolute;}
+      .rain img{width: 50px; height: 50px; position: absolute;}
       .rain p{position: absolute;  font-family: 'Modak', cursive; background: white; }
 
       .pac img {width: 100px; height: 100px; position: absolute;}
@@ -31,14 +31,14 @@
 
 
       @keyframes rr{
-         from{bottom: 1000px;}
-         to{bottom: 50px;}
+         from{bottom: 100vh;}
+         to{bottom: 3vh;}
 
       }
    </style>
 </head>
 <body>
-   <div id="pac"><img src="pman.jpg" style="width: 1100px; "></div>
+   <div id="pac"><img src="pman.jpg" style="height: 100vh; "></div>
    <div class="rain" id="rrr"><img src="man_w.png"></div>
    <script>
     for(var i=0; i<30; i++){
